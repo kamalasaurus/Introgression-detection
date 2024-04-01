@@ -396,7 +396,7 @@ def combined_files(ancestralfiles, vcffiles):
 
     # Same length
     elif len(ancestralfiles) == len(vcffiles):
-        return ancestralfiles, vcffiles
+        return sorted(ancestralfiles), sorted(vcffiles)
 
     # diff lengthts (both longer than 1)       
     elif len(ancestralfiles) > 1 and len(vcffiles) > 1:
